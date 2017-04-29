@@ -43,15 +43,7 @@ namespace NUnit.VisualStudio.TestAdapter
 
     private static string GetFullyQualifiedName(TestCase testCase)
     {
-      var barPosition = testCase.FullyQualifiedName.IndexOf('|');
-      if (barPosition == -1)
-      {
-        return testCase.FullyQualifiedName;
-      }
-      else
-      {
-        return testCase.FullyQualifiedName.Substring(0, barPosition);
-      }
+      return testCase.GetPropertyValue(TestConverter.FullNameProperty) as string;
     }
   }
 }

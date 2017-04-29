@@ -99,6 +99,7 @@
     <Compile Include="NUnit3TestExecutor.cs" />
     <Compile Include="NUnitTestFilterBuilder.cs" />
     <Compile Include="PackageSettings.cs" />
+    <Compile Include="StringHelper.cs" />
     <Compile Include="TestConverter.cs">
       <SubType>Code</SubType>
     </Compile>
