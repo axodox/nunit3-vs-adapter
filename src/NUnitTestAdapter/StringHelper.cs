@@ -6,7 +6,7 @@ namespace NUnit.VisualStudio.TestAdapter
 {
     public static class StringHelper
     {
-        private const string _typeArgumentPattern = @"(?><(?>[^<>]*|(?<n><)|(?<-n>>))*>(?(n)(?!)))";
+        private const string _typeArgumentPattern = @"(?><(?>[^<>]|(?<n><)|(?<-n>>))*>(?(n)(?!)))";
 
         private static readonly Regex _pathRegex = new Regex(@"(?:^|[.+])(?>[^.+()<>]+|" + _typeArgumentPattern + @"|\((?>[^'""()]|'.'|""(?>[^""]|(?<=\\)"")*"")*\))+", RegexOptions.Compiled);
 
